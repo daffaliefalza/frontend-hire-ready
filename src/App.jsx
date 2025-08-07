@@ -16,7 +16,7 @@ import MockInterview from "./pages/mockInterview/Home";
 import QuestionListPage from "./pages/liveCode/QuestionListPage";
 import LiveCodeLobby from "./pages/liveCode/CodeLobby";
 import CodingInterface from "./pages/liveCode/CodingInterface";
-import LeaderboardPage from "./pages/leaderboardPage";
+import LeaderboardPage from "./pages/LeaderboardPage";
 import ForgotPassword from "./pages/Auth/ForgotPassword";
 import ResetPassword from "./pages/Auth/ResetPassword";
 
