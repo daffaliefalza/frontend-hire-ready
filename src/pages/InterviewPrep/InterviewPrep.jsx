@@ -7,7 +7,7 @@ import { LuCircleAlert, LuListPlus, LuLoader } from "react-icons/lu";
 import { toast } from "react-hot-toast";
 
 import DashboardLayout from "../../components/Layouts/DashboardLayout";
-import RoleInfoHeader from "../../components/roleInfoHeader";
+import RoleInfoHeader from "../../components/RoleInfoHeader";
 import QuestionCard from "../../components/Cards/QuestionCard";
 import AIResponsePreview from "../../components/AIResponsePreview";
 import Drawer from "../../components/Drawer";
@@ -33,7 +33,6 @@ const InterviewPrep = () => {
   const [quizData, setQuizData] = useState(null);
   const [isQuizLoading, setIsQuizLoading] = useState(false);
   const [quizError, setQuizError] = useState("");
-
 
   // ... (All your data fetching and handler functions remain the same)
   const fetchSessionDetailsById = async (showPageLoader = true) => {
@@ -191,7 +190,9 @@ const InterviewPrep = () => {
 
   return (
     <DashboardLayout>
-      <div ref={mainRef}> {/* GSAP Ref Scope */}
+      <div ref={mainRef}>
+        {" "}
+        {/* GSAP Ref Scope */}
         {isPageLoading ? (
           <div className="p-8">
             <SkeletonLoader type="header" />
@@ -214,7 +215,6 @@ const InterviewPrep = () => {
             />
           </div>
         )}
-
         {/* Main Content Area */}
         <main className="bg-slate-50 flex-grow">
           <div className="container mx-auto py-8 px-4 md:px-6">
@@ -276,7 +276,8 @@ const InterviewPrep = () => {
                       whileHover={{
                         scale: 1.05,
                         backgroundColor: "#f8fafc" /* slate-50 */,
-                        boxShadow: "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)"
+                        boxShadow:
+                          "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
                       }}
                       whileTap={{ scale: 0.95 }}
                     >
