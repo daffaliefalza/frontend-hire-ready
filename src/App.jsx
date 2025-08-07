@@ -1,24 +1,30 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+
+// ✅ Pages
 import LandingPage from "./pages/LandingPage";
 import Dashboard from "./pages/qna/Dashboard";
 import InterviewPrep from "./pages/InterviewPrep/InterviewPrep";
-import UserProvider from "./context/userContext";
 import Features from "./pages/Features";
 import Preview from "./pages/qna/Preview";
-import Error from "./components/Error";
-import ProtectedRoute from "./components/ProtectedRoute";
 import Login from "./pages/Auth/Login";
 import SignUp from "./pages/Auth/SignUp";
+import ForgotPassword from "./pages/Auth/ForgotPassword";
+import ResetPassword from "./pages/Auth/ResetPassword";
 import Home from "./pages/resume/Home";
 import MockInterview from "./pages/mockInterview/Home";
 import QuestionListPage from "./pages/liveCode/QuestionListPage";
 import LiveCodeLobby from "./pages/liveCode/CodeLobby";
 import CodingInterface from "./pages/liveCode/CodingInterface";
 import LeaderboardPage from "./pages/LeaderboardPage";
-import ForgotPassword from "./pages/Auth/ForgotPassword";
-import ResetPassword from "./pages/Auth/ResetPassword";
+
+// ✅ Components
+import Error from "./components/Error";
+import ProtectedRoute from "./components/ProtectedRoute";
+
+// ✅ Context
+import UserProvider from "./context/userContext";
 
 const App = () => {
   return (
